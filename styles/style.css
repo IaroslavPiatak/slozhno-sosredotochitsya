@@ -1,5 +1,168 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* Header Start */
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 299px 130px 299px;
+  padding: var(--content-padding, 20px);
+  background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: var(--content-padding, 20px);
+  right: var(--content-padding, 20px);
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--accent-color, #ff0070);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom:  var(--content-padding, 20px);
+  left:  var(--content-padding, 20px);
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-left: 1px solid var(--accent-color, #ff0070);
+}
+
+.header-decorated-text {
+  position: absolute;
+  top: 20px;
+  right: 48px;;
+  color: var(--accent-color, #ff0070);
+  font-family: var(--main-font);
+  line-height: 139%;
+}
+
+.header-decorated-text::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -19px;  
+  display: block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 100%;
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+}
+
+.header__theme-menu {
+  justify-self: center;
+  max-block-size: 26px;
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 1.5px 13px;
+  color: var(--accent-color, red);
+  font-family: var(--main-font, sans-serif);
+  box-sizing: border-box;
+}
+
+.header__title {
+  margin-inline-start: -20px;
+  color: #db00ff;
+  font-family: var(--main-font, sans-serif);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.header__text-block {
+  justify-self: end;
+  align-self: center;
+  color: #000028;
+  font-family: var(--main-font, sans-serif);
+  font-weight: 700;
+  line-height: 130%;
+  max-inline-size: 491px;
+  max-block-size: min-content;
+}
+
+.title-decore {
+  background-color: var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--accent-color, #ff0070);
+}
+
+/* Header End */
+
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-size: var(--main-font-size, 18px);
+  background-color: var(--background-color, #000028);
+  max-inline-size: 1024px;
+}
+
+
+/* Media */
+@media (max-width: 768px)
+{
+
+  .header {
+    grid-template-rows: 443px 99px 443px;
+  }
+
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+    margin-block-start: -38px;
+  }
+
+  .header__text-block {
+    max-inline-size: 364px;
+  }
+ 
+}
+
+@media (max-width: 375px)
+{
+  :root {
+    --content-padding: 10px;
+  }
+
+  .header {
+    grid-template-rows: 228px 192px 228px;
+  }
+
+  .header__title {
+    margin-inline-start: 0px;
+  }
+
+  .header-decorated-text {
+    top: 10px;
+    right: 40px;;
+  }
+
+  .header-decorated-text::after {
+    top: 8px;
+    right: -20px;
+  }  
+
 }
