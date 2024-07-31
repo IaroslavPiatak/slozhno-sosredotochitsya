@@ -45,4 +45,5 @@ a {
   border: none;
   text-transform: lowercase;
   cursor: pointer;
+  text-decoration: none;
 }
