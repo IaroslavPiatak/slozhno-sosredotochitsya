@@ -4,10 +4,35 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-color: #000028;
+    background-image: url(../images/cover-image-dark.png);
+    --accent-color: #ff0070;
+    --nav-menu-color: #ff0070;
+    --nav-menu-hover-outline: 1px solid rgba(255, 0, 112, 0.4);
+    --header-title-color: #DB00FF;
+    --title-text-color: #000028;
+    --title-accent-color: #ff0070;
+    --main-text-color: #F1B2CE;
+  }
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --accent-color: #ff0070;
+    --nav-menu-color: #ff0070;
+    --nav-menu-hover-outline: 1px solid rgba(255, 0, 112, 0.4);
+    --header-title-color: #DB00FF;
+    --title-text-color: #000028;
+    --title-accent-color: #ff0070;
+    --main-text-color: #F1B2CE;
+    background-color: #000028;
+    background-image: url(../images/cover-image-dark.png);
+    
+  
 }
 

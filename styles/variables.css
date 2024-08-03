@@ -3,13 +3,6 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #ff0070;
-  --nav-menu-color: #ff0070;
-  --nav-menu-hover-outline: 1px solid rgba(255, 0, 112, 0.4);
-  --header-title-color: #DB00FF;
-  --title-text-color: #000028;
-  --title-accent-color: #ff0070;
-  --main-text-color: #F1B2CE;
   --main-font: 'IBM Plex Mono', Arial sans-serif;
   --main-font-size: 18px;
   --content-padding: 20px;
