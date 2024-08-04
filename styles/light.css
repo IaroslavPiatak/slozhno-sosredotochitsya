@@ -6,8 +6,6 @@
 
 @media (prefers-color-scheme: light) {
   .page {
-    background-image: url(../images/cover-image-light.png);
-    background-color: #FFF1F7;
     --accent-color: #FF8DCB;
   --nav-menu-color: #353430;
   --nav-menu-hover-outline: 1px solid rgba(50, 49, 45, 0.4);
@@ -16,17 +14,13 @@
   --title-accent-color: #353430;
   --main-text-color: #353430;
   --display-visible: none;
+    background-color: #FFF1F7;
+    background-image: url(../images/cover-image-light.png);
   }
 }
 
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: url(../images/cover-image-light.png);
-  background-color: #FFF1F7;
 
   --accent-color: #FF8DCB;
   --nav-menu-color: #353430;
@@ -36,6 +30,12 @@
   --title-accent-color: #353430;
   --main-text-color: #353430;
   --display-visible: none;
+  background-color: #FFF1F7;
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  background-image: url(../images/cover-image-light.png);
 }
 
 
